@@ -13,6 +13,9 @@
                 <th scope="col">#</th>
                 <th>Nome</th>
                 <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Município</th>
+                <th>Cep</th>
                 <th>Telefone</th>
                 <th>Ações</th>
               </tr>
@@ -23,6 +26,9 @@
                   <td>{{ $item->id }}</td>
                   <td>{{ $item->nome }}</td>
                   <td>{{ $item->endereco }}</td>
+                  <td>{{ $item->bairro }}</td>
+                  <td>{{ $item->municipio }}</td>
+                  <td>{{ $item->cep }}</td>
                   <td>{{ $item->telefone }}</td>
                   <td>
                     <a href="clientes/editar/{{ $item->id }}" class="btn btn-warning">
